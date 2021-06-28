@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript課題</title>
+</head>
+
+<body>
+    <h1 id="title">ようこそ</h1>
+    <p id="quiz-number"></p>
+
+    <div>
+        <div class="genre">
+        <p></p>
+        <p id="quiz-genre"></p>
+        </div>
+        <div class="genre">
+        <p></p>
+        <p id="difficult"></p>
+        </div>
+    </div>
+
+    <div id="quiz-container">
+        <p id="quiz"></p>
+    </div>
+        <button id="btn">開始</button><br>
+        <ul id="select">
+            <li class="li"><button id="ans-btn" type="button" class="btn" onclick="pushChoices(event)"></button></li>
+            <li class="li"><button id="ans-btn" type="button" class="btn" onclick="pushChoices(event)"></button></li>
+            <li class="li"><button id="ans-btn" type="button" class="btn" onclick="pushChoices(event)"></button></li>
+            <li class="li"><button id="ans-btn" type="button" class="btn" onclick="pushChoices(event)"></button></li>
+        </ul>
+        <div id="home-button-container"></div>
+    <style>
+        #quiz {
+            padding: 15px 0;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+
+        ul {
+            display: none;
+        }
+
+        #quiz-number {
+            font-size: 20px;
+        }
+
+        .genre {
+            display: flex;
+            font-size: 20px;
+        }
+    </style>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
